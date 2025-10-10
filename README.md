@@ -10,7 +10,7 @@ Mi objetivo es combinar diseño, lógica y usabilidad para construir herramienta
 
 ## Contacto
 
-📧 **ignacioleguizamon.dev@gmail.com**  
+📧 **leguizamonignacio10@gmail.com**  
 🔗 [LinkedIn](https://www.linkedin.com/in/ignaciolegui/)  
 💻 [GitHub](https://github.com/IgnacioLegui)  
 🌍 [Sitio web](https://ignacioleguizamon.site)
