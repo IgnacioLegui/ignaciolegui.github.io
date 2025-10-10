@@ -1,0 +1,16 @@
+{
+    "name": "ignacio/lab_prog_2025_joseignacioleguizamon",
+    "autoload": {
+        "psr-4": {
+             "app\\": "",
+            "Dompdf\\": "vendor/dompdf/dompdf/src"
+
+        }
+    },
+    "authors": [
+        {
+            "name": "jose ignacio leguizamon"
+        }
+    ],
+    "require": {}
+}

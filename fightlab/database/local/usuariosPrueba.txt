@@ -1,0 +1,3 @@
+jose.leguizamon - CLAVE1234	//administrador
+
+fabri.l - HOLA1234 	//operador
