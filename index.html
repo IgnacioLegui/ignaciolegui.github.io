@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>José Ignacio Leguizamón - Desarrollador de Software</title>
+    <title>José Ignacio Leguizamón - Software Developer</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Sora (display) + Space Mono (monospace accents) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -37,7 +35,7 @@
             font-family: 'Space Mono', monospace;
         }
         
-        /* Animaciones sofisticadas */
+        /* Sophisticated Animations */
         @keyframes fadeInUp {
             from { 
                 opacity: 0; 
@@ -65,7 +63,7 @@
             transform: translateY(0);
         }
         
-        /* Efectos hover mejorados */
+        /* Enhanced Hover Effects */
         .project-card {
             position: relative;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -103,7 +101,7 @@
             transform: scale(1.05);
         }
         
-        /* Botones con gradientes */
+        /* Gradient Buttons */
         .btn-primary {
             background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
             position: relative;
@@ -131,7 +129,7 @@
             box-shadow: 0 10px 30px rgba(6, 182, 212, 0.4);
         }
         
-        /* Barra de navegación mejorada */
+        /* Improved Nav Bar */
         .nav-link {
             position: relative;
             transition: color 0.3s ease;
@@ -152,7 +150,7 @@
             width: 100%;
         }
         
-        /* Tags de tecnología */
+        /* Tech Tags */
         .tech-tag {
             background: rgba(6, 182, 212, 0.1);
             border: 1px solid rgba(6, 182, 212, 0.3);
@@ -165,7 +163,6 @@
             transform: translateY(-2px);
         }
         
-        /* Sección numerada mejorada */
         .section-number {
             font-family: 'Space Mono', monospace;
             color: var(--primary);
@@ -177,7 +174,7 @@
             background: linear-gradient(90deg, var(--primary) 0%, transparent 100%);
         }
         
-        /* Efecto de brillo en foto */
+        /* Profile Image Shimmer */
         .profile-image {
             position: relative;
             overflow: hidden;
@@ -200,7 +197,6 @@
             100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
         }
         
-        /* Scroll suave personalizado */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -221,7 +217,6 @@
 </head>
 <body class="text-gray-200">
 
-    <!-- Barra de Navegación -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-cyan-500/10">
         <nav class="container mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
             <a href="#hero" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-cyan-200 bg-clip-text text-transparent hover:scale-105 transition-transform">
@@ -229,16 +224,15 @@
             </a>
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="#about" class="nav-link text-sm font-medium">
-                    <span class="text-cyan-400 font-mono">01.</span> Sobre Mí
+                    <span class="text-cyan-400 font-mono">01.</span> About
                 </a>
                 <a href="#projects" class="nav-link text-sm font-medium">
-                    <span class="text-cyan-400 font-mono">02.</span> Proyectos
+                    <span class="text-cyan-400 font-mono">02.</span> Projects
                 </a>
                 <a href="#contact" class="nav-link text-sm font-medium">
-                    <span class="text-cyan-400 font-mono">03.</span> Contacto
+                    <span class="text-cyan-400 font-mono">03.</span> Contact
                 </a>
                 
-                <!-- GitHub -->
                 <a href="https://github.com/IgnacioLegui" target="_blank" rel="noopener"
                    class="inline-flex items-center gap-2 rounded-lg bg-transparent border border-cyan-500/30 px-4 py-2 text-sm font-semibold text-cyan-400 transition-all hover:bg-cyan-500/10 hover:border-cyan-500">
                     <svg aria-hidden="true" viewBox="0 0 24 24" class="h-4 w-4 fill-current">
@@ -247,7 +241,6 @@
                     GitHub
                 </a>
                 
-                <!-- LinkedIn -->
                 <a href="https://www.linkedin.com/in/ignaciolegui/" target="_blank" rel="noopener"
                    class="inline-flex items-center gap-2 rounded-lg bg-transparent border border-cyan-500/30 px-4 py-2 text-sm font-semibold text-cyan-400 transition-all hover:bg-cyan-500/10 hover:border-cyan-500">
                     <svg aria-hidden="true" viewBox="0 0 25 25" class="h-4 w-4 fill-current">
@@ -257,7 +250,6 @@
                 </a>
             </div>
             
-            <!-- Menú Móvil Button -->
             <button id="mobile-menu-button" class="md:hidden text-gray-200 focus:outline-none hover:text-cyan-400 transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -265,16 +257,15 @@
             </button>
         </nav>
         
-        <!-- Enlaces Menú Móvil -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900/95 backdrop-blur-md border-t border-cyan-500/10">
             <a href="#about" class="block py-3 px-6 text-sm hover:bg-cyan-500/10 transition-colors border-l-2 border-transparent hover:border-cyan-400">
-                <span class="text-cyan-400 font-mono">01.</span> Sobre Mí
+                <span class="text-cyan-400 font-mono">01.</span> About
             </a>
             <a href="#projects" class="block py-3 px-6 text-sm hover:bg-cyan-500/10 transition-colors border-l-2 border-transparent hover:border-cyan-400">
-                <span class="text-cyan-400 font-mono">02.</span> Proyectos
+                <span class="text-cyan-400 font-mono">02.</span> Projects
             </a>
             <a href="#contact" class="block py-3 px-6 text-sm hover:bg-cyan-500/10 transition-colors border-l-2 border-transparent hover:border-cyan-400">
-                <span class="text-cyan-400 font-mono">03.</span> Contacto
+                <span class="text-cyan-400 font-mono">03.</span> Contact
             </a>
             <a href="https://www.linkedin.com/in/ignaciolegui/" target="_blank" class="block py-3 px-6 text-sm hover:bg-cyan-500/10 transition-colors">LinkedIn</a>
             <a href="https://github.com/IgnacioLegui" target="_blank" class="block py-3 px-6 text-sm hover:bg-cyan-500/10 transition-colors">GitHub</a>
@@ -283,39 +274,39 @@
 
     <div class="container mx-auto px-6 md:px-12">
         
-        <!-- Sección Hero -->
         <main id="hero" class="min-h-screen flex items-center pt-20">
             <div class="fade-in-up max-w-4xl">
-                <p class="text-cyan-400 font-mono text-sm mb-4 tracking-wide">Hola, mi nombre es</p>
+                <p class="text-cyan-400 font-mono text-sm mb-4 tracking-wide">Hi, my name is</p>
                 <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-gray-100 mb-4 leading-tight">
                     José Ignacio<br/>
                     <span class="bg-gradient-to-r from-cyan-400 via-cyan-300 to-cyan-500 bg-clip-text text-transparent">Leguizamón</span>
                 </h1>
                 <h2 class="text-3xl md:text-5xl font-bold text-gray-400 mb-8 leading-tight">
-                    Transformo ideas en <span class="text-cyan-400">soluciones digitales.</span>
+                    Turning ideas into <span class="text-cyan-400">digital solutions.</span>
                 </h2>
                 <p class="max-w-2xl text-gray-400 text-lg mb-12 leading-relaxed">
-                    Desarrollador de software especializado en crear experiencias digitales excepcionales. 
-                    Enfocado en construir productos accesibles, escalables y centrados en el usuario.
+                    Software Developer specialized in creating exceptional digital experiences. 
+                    Focused on building accessible, scalable, and user-centered products.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <button class="btn-primary text-white font-semibold py-4 px-8 rounded-lg text-lg shadow-lg">
-                        Descargar CV
-                    </button>
+                    <a href="cv/Resume - José Ignacio Leguizamón.pdf" 
+                       class="btn-primary text-white font-semibold py-4 px-8 rounded-lg text-lg shadow-lg inline-block" 
+                       download="Resume - José Ignacio Leguizamón.pdf">
+                        Download Resume
+                    </a>
                     <a href="#contact" 
                        class="bg-transparent border-2 border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 font-semibold py-4 px-8 rounded-lg text-lg transition-all inline-block">
-                        Contactar
+                        Get In Touch
                     </a>
                 </div>
             </div>
         </main>
 
-        <!-- Sección Sobre Mí -->
         <section id="about" class="py-32 section-visible">
             <div class="flex items-center gap-4 mb-12">
                 <h3 class="text-3xl md:text-4xl font-bold">
                     <span class="section-number">01.</span>
-                    <span class="text-gray-100 ml-3">Sobre Mí</span>
+                    <span class="text-gray-100 ml-3">About Me</span>
                 </h3>
                 <div class="section-divider flex-grow max-w-sm"></div>
             </div>
@@ -323,15 +314,16 @@
             <div class="grid md:grid-cols-5 gap-12 items-center">
                 <div class="md:col-span-3 space-y-5 text-gray-400 leading-relaxed">
                     <p>
-                        ¡Hola! Soy Ignacio, un desarrollador de software apasionado por crear soluciones tecnológicas que marcan la diferencia. Mi camino en el desarrollo comenzó con curiosidad y se ha convertido en una dedicación constante por aprender y mejorar.
+                        Hello! I'm Ignacio, a software developer passionate about creating technological solutions that make a difference. My journey in development started with curiosity and has turned into a constant dedication to learning and improving.
                     </p>
                     <p>
-                        Actualmente estoy cursando la <span class="text-cyan-400 font-semibold">Licenciatura en Gestión de Tecnologías de la Información</span> en UADE, donde estoy adquiriendo una sólida base técnica que complemento con proyectos reales y aprendizaje autodidacta.
+                        I am currently pursuing a <span class="text-cyan-400 font-semibold">Bachelor's Degree in IT Management</span> at UADE, where I am building a solid technical foundation that I complement with real-world projects and self-taught learning.
                     </p>
                     <p>
-                        Me especializo en Ingeniería de Software y Desarrollo Backend. Mi enfoque está en diseñar arquitecturas robustas y resolver desafíos complejos, asegurando la calidad en todo el ciclo de desarrollo.
+                        I specialize in Software Engineering and Backend Development. My focus is on designing robust architectures and solving complex challenges, ensuring quality throughout the development lifecycle.
+                    </p>
                     <div>
-                        <p class="text-cyan-400 font-semibold mb-4">Tecnologías con las que trabajo:</p>
+                        <p class="text-cyan-400 font-semibold mb-4">Technologies I work with:</p>
                         <div class="grid grid-cols-2 gap-3 text-sm">
                             <div class="flex items-center gap-2">
                                 <span class="text-cyan-400">▹</span>
@@ -343,7 +335,7 @@
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="text-cyan-400">▹</span>
-                                <span>Html + CSS</span>
+                                <span>HTML + CSS</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="text-cyan-400">▹</span>
@@ -364,42 +356,40 @@
                 <div class="md:col-span-2 flex justify-center">
                     <div class="profile-image relative w-64 h-64 md:w-72 md:h-72 rounded-xl overflow-hidden shadow-2xl bg-gradient-to-br from-cyan-500/20 to-gray-800">
                         <div class="absolute inset-0 flex items-center justify-center text-gray-500 text-sm">
-                            <img src="img/mifoto.jpg" alt="Mi foto de perfil" class="rounded-lg transition-transform duration-300 group-hover:scale-105 filter grayscale hover:grayscale-0">
+                            <img src="img/mifoto.jpg" alt="Profile Picture" class="rounded-lg transition-transform duration-300 group-hover:scale-105 filter grayscale hover:grayscale-0">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección Proyectos -->
         <section id="projects" class="py-32 section-visible">
             <div class="flex items-center gap-4 mb-16">
                 <h3 class="text-3xl md:text-4xl font-bold">
                     <span class="section-number">02.</span>
-                    <span class="text-gray-100 ml-3">Proyectos Destacados</span>
+                    <span class="text-gray-100 ml-3">Featured Projects</span>
                 </h3>
                 <div class="section-divider flex-grow max-w-sm"></div>
             </div>
 
             <div class="space-y-24">
                 
-                <!-- Proyecto 1: AstroNews -->
                 <div class="project-card grid md:grid-cols-2 gap-8 items-center bg-gray-900/50 backdrop-blur-sm p-8 rounded-xl">
                     <div class="rounded-xl overflow-hidden shadow-2xl bg-gradient-to-br from-cyan-500/10 to-gray-800 aspect-video flex items-center justify-center">
-                        <img src="img/astro.png" alt="Vista previa del Proyecto 1" class="w-full h-auto rounded-lg">
+                        <img src="img/astro.png" alt="AstroWeather Preview" class="w-full h-auto rounded-lg">
                     </div>
                     <div>
-                        <p class="text-cyan-400 font-mono text-sm mb-2">Proyecto Destacado</p>
+                        <p class="text-cyan-400 font-mono text-sm mb-2">Featured Project</p>
                         <h4 class="text-3xl font-bold text-gray-100 mb-4">AstroWeather</h4>
                         <div class="bg-gray-800/80 p-6 rounded-lg mb-6 backdrop-blur-sm">
                             <p class="text-gray-300 leading-relaxed">
-                                Aplicación web completa que consume la API de NASA para mostrar pronosticos meteorologicos. 
-                                Desarrollada con arquitectura moderna que incluye backend en JS, y frontend interactivo con JavaScript vanilla. Implementa diseño responsive.
+                                A comprehensive web application that consumes NASA's API to display meteorological forecasts. 
+                                Built with a modern architecture featuring a JS backend and an interactive vanilla JavaScript frontend. Implements responsive design.
                             </p>
                         </div>
                         <div class="flex flex-wrap gap-2 mb-6">
                             <span class="tech-tag text-cyan-300 text-xs font-semibold px-3 py-1.5 rounded-full">HTML</span>
-                            <span class="tech-tag text-cyan-300 text-xs font-semibold px-3 py-1.5 rounded-full">Bootsrap</span>
+                            <span class="tech-tag text-cyan-300 text-xs font-semibold px-3 py-1.5 rounded-full">Bootstrap</span>
                             <span class="tech-tag text-cyan-300 text-xs font-semibold px-3 py-1.5 rounded-full">JavaScript</span>
                             <span class="tech-tag text-cyan-300 text-xs font-semibold px-3 py-1.5 rounded-full">NASA API</span>
                         </div>
@@ -422,20 +412,18 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 2: SportZone -->
                 <div class="project-card grid md:grid-cols-2 gap-8 items-center bg-gray-900/50 backdrop-blur-sm p-8 rounded-xl">
                     <div class="md:order-2 rounded-xl overflow-hidden shadow-2xl bg-gradient-to-br from-cyan-500/10 to-gray-800 aspect-video flex items-center justify-center">
-                         <img src="img/sport.png" alt="Vista previa del Proyecto 2" class="w-full h-auto rounded-lg">
+                         <img src="img/sport.png" alt="SportZone Preview" class="w-full h-auto rounded-lg">
                     </div>
                     <div class="md:order-1 md:text-right">
-                        <p class="text-cyan-400 font-mono text-sm mb-2">Proyecto Académico</p>
+                        <p class="text-cyan-400 font-mono text-sm mb-2">Academic Project</p>
                         <h4 class="text-3xl font-bold text-gray-100 mb-4">SportZone</h4>
                         <div class="bg-gray-800/80 p-6 rounded-lg mb-6 backdrop-blur-sm">
                             <p class="text-gray-300 leading-relaxed">
-                                E-commerce completo desarrollado con WordPress y WooCommerce para la venta de indumentaria deportiva. 
-                                Incluye sistema de gestión de productos, carrito de compras, pasarela de pagos integrada, 
-                                sistema de filtrado avanzado por categorías y tallas, y panel de administración personalizado. 
-                                Optimizado para SEO y dispositivos móviles.
+                                A full-featured e-commerce platform developed with WordPress and WooCommerce for sports apparel. 
+                                Includes product management, shopping cart, integrated payment gateways, advanced filtering by category and size, and a custom admin panel. 
+                                Optimized for SEO and mobile devices.
                             </p>
                         </div>
                         <div class="flex flex-wrap gap-2 mb-6 md:justify-end">
@@ -466,24 +454,22 @@
             </div>
         </section>
 
-        <!-- Sección Contacto -->
         <section id="contact" class="py-32 text-center section-visible">
             <div class="max-w-2xl mx-auto">
-                <p class="text-cyan-400 font-mono text-sm mb-4">03. ¿Qué sigue?</p>
-                <h3 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">Construyamos algo juntos</h3>
+                <p class="text-cyan-400 font-mono text-sm mb-4">03. What's Next?</p>
+                <h3 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">Let's Build Something Together</h3>
                 <p class="text-gray-400 text-lg mb-12 leading-relaxed">
-                    Actualmente estoy abierto a nuevas oportunidades y me entusiasma escuchar sobre proyectos interesantes. 
-                    Si tienes un rol donde crees que podría aportar valor o simplemente quieres conectar y hablar de tecnología, 
-                    <span class="text-cyan-400 font-semibold">¡me encantaría recibir tu mensaje!</span>
+                    I am currently looking for new opportunities and would love to hear about interesting projects. 
+                    Whether you have a role where I could contribute or just want to connect and talk about tech, 
+                    <span class="text-cyan-400 font-semibold">I'd love to hear from you!</span>
                 </p>
                 <a href="mailto:leguizamonignacio10@gmail.com" 
                    class="btn-primary text-white font-semibold py-4 px-10 rounded-lg text-lg inline-block shadow-xl">
-                    Envíame un mensaje
+                    Send Me a Message
                 </a>
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="py-12 text-center border-t border-cyan-500/10">
             <div class="flex justify-center gap-6 mb-6">
                 <a href="https://github.com/IgnacioLegui" target="_blank" 
@@ -500,14 +486,14 @@
                 </a>
             </div>
             <p class="text-gray-500 font-mono text-sm">
-                Diseñado y construido por <span class="text-cyan-400">José Ignacio Leguizamón</span>
+                Designed and built by <span class="text-cyan-400">José Ignacio Leguizamón</span>
             </p>
         </footer>
 
     </div>
 
     <script>
-        // Menú móvil
+        // Mobile Menu
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         
@@ -515,7 +501,7 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Cerrar menú móvil al hacer clic en enlaces
+        // Close mobile menu on link click
         const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
         for (let link of mobileMenuLinks) {
             link.addEventListener('click', () => {
@@ -523,7 +509,7 @@
             });
         }
 
-        // Animación de secciones al hacer scroll
+        // Section Scroll Animation
         const sections = document.querySelectorAll('.section-hidden');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -541,7 +527,7 @@
             observer.observe(section);
         });
 
-        // Smooth scroll mejorado
+        // Enhanced Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
